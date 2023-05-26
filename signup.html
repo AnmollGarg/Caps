@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <header>
+        <nav>
+            <div class="nav-left" id="logo"><img src="/Images/Logo.ico" alt=""></div>
+            <div class="nav-right">
+                <ul>
+                    <a href="index.php">
+                        <li>Home</li>
+                    </a>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Services</li>
+                    <li>Committee
+                        <ul class="dropdown-menu">
+                            <a href="tt.html">
+                                <li>Tech Tank</li>
+                            </a>
+                            <li>Media & PR</li>
+                            <li>Operations</li>
+                            <li>CG & QC</li>
+                        </ul>
+                    </li>
+                    <a href="log.html"><button class="log-in-btn">Log In</button></a>
+
+                    <a href="signup.html"><button class="log-in-btn">Sign Up</button></a>
+
+                    <a href="blog.html"><button class="log-in-btn">Write Blog</button></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <h2>Sign Up Form</h2> -->
+    <div class="form-container">
+        <form method="POST" action="signup.php">
+            <label class="form-text" for="fullname">Full Name:</label>
+            <input class="form-input" type="text" id="fullname" name="fullname" required><br><br>
+
+            <label class="form-text" for="username">Username:</label>
+            <input class="form-input" type="text" id="username" name="username" required><br><br>
+
+            <label class="form-text" for="password">Password:</label>
+            <input class="form-input" type="password" id="password" name="password" required><br><br>
+
+            <label class="form-text" for="phoneno">Phone Number:</label>
+            <input class="form-input" type="text" id="phoneno" name="phoneno" required><br><br>
+
+            <label class="form-text" for="email">Email:</label>
+            <input class="form-input" type="email" id="email" name="email" required><br><br>
+
+            <label class="form-text" for="committee">Committee:</label>
+            <input class="form-input" type="text" id="committee" name="committee" required><br><br>
+
+            <label class="form-text" for="verificationKey">Verification Key:</label>
+            <input class="form-input" type="text" id="verificationKey" name="verificationKey" required><br><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+
+</html>
+
+</body>
+
+</html>

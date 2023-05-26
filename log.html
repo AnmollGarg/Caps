@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Login Form</title>
+</head>
+
+<body>
+	<!-- Navbar  -->
+	<header>
+		<nav>
+			<div class="nav-left" id="logo"><img src="/Images/Logo.ico" alt=""></div>
+			<div class="nav-right">
+				<ul>
+					<a href="index.php">
+						<li>Home</li>
+					</a>
+					<li>About Us</li>
+					<li>Contact Us</li>
+					<li>Services</li>
+					<li>Committee
+						<ul class="dropdown-menu">
+							<a href="tt.html">
+								<li>Tech Tank</li>
+							</a>
+							<li>Media & PR</li>
+							<li>Operations</li>
+							<li>CG & QC</li>
+						</ul>
+					</li>
+					<a href="log.html"><button class="log-in-btn">Log In</button></a>
+
+					<a href="signup.html"><button class="log-in-btn">Sign Up</button></a>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<h5>Login Form</h5>
+	<div class="form-container">
+		<form method="POST" action="login.php">
+			<label class="form-text" for="username">Username:</label>
+			<input class="form-input" type="text" id="username" name="username" required><br><br>
+			<label class="form-text" for="password">Password:</label>
+			<input class="form-input" type="password" id="password" name="password" required><br><br>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+
+</html>

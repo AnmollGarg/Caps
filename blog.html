@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/images/formal.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="script" href="/Images/script.js">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CAPS</title>
+</head>
+
+<body>
+	<!-- Navbar  -->
+	<header>
+		<nav>
+			<div class="nav-left" id="logo"><img src="#" alt="">CAPS</div>
+			<div class="nav-right">
+				<ul>
+					<a href="index.php">
+						<li>Home</li>
+					</a>
+					<li>About Us</li>
+					<li>Contact Us</li>
+					<li>Services</li>
+					<li>Committee
+						<ul class="dropdown-menu">
+							<a href="tt.html">
+								<li>Tech Tank</li>
+							</a>
+							<a href="#"></a>
+							<li>Media & PR</li></a>
+							<a href="#"></a>
+							<li>Operations</li></a>
+							<a href="#"></a>
+							<li>CG & QC</li></a>
+						</ul>
+					</li>
+					<a href="log.html"><button class="log-in-btn">Log In</button></a>
+					<a href="signup.html"><button class="log-in-btn">Sign Up</button></a>
+					<a href="blog.html"><button class="log-in-btn">Write Blog</button></a>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Content Form  -->
+	<div class="form-container">
+		<form method="POST" action="blog.php">
+			<label class="form-text" for="author">Author:</label>
+			<input class="form-input" type="text" id="author" name="author" required><br>
+
+			<label class="form-text" for="username">Username:</label>
+			<input class="form-input" type="text" id="username" name="username" required><br>
+
+			<label class="form-text" for="title">Title:</label>
+			<input class="form-input" type="text" id="title" name="title" required><br>
+
+			<label class="form-text" for="content">Content:</label><br>
+			<textarea class="form-input" id="content" name="content" required></textarea><br>
+
+			<label class="form-text" for="date">Date:</label>
+			<input class="form-input" type="date" id="date" name="date" required><br>
+
+			<label class="form-text" for="committee">Committee:</label>
+			<input class="form-input" type="text" id="committee" name="committee" required><br>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+
+</body>
+
+</html>
